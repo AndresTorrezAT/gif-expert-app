@@ -3,6 +3,8 @@ import { getGifs } from "../helpers/getGifs";
 
 export const useFetchGifs = ( category ) => {
 
+    console.log("adentro");
+
     const [images, setImages] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
 
