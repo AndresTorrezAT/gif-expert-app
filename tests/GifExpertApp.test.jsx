@@ -5,9 +5,11 @@ import { GifExpertApp } from "../src/GifExpertApp";
 
 describe('Pruebas en <GifExpertApp />', () => {
 
-    test('should', () => {
+    test('el primer render del GifExpert', () => {
 
-        render( <GifExpertApp /> );
+        const {container} = render( <GifExpertApp /> );
+        expect(container).toMatchSnapshot();
+
         // screen.debug();
     });
 });
